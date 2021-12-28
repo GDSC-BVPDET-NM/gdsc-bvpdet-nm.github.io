@@ -220,10 +220,19 @@ body {
   width: 90%;
 }
 .social-hero-icons img {
-  margin-top: -2.5rem;
   margin-left: 1.5rem;
   width: 4%;
+  transition: transform 0.2s ease-in;
 }
+
+.social-hero-icons img:hover , .social-contact-icons img:hover{
+  transform: scale(1.2);
+}
+
+/* .bottomline{
+  
+  margin-top: -2.5rem;
+} */
 
 .line-left {
   z-index: 20;
@@ -479,6 +488,7 @@ body {
 .social-contact-icons img {
   margin-top: 3rem;
   margin-right: 1rem;
+  transition: transform 0.2s ease-in;
 }
 
 /* Have a project  */
