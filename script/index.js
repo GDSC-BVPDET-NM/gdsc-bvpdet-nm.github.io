@@ -33,7 +33,20 @@ var request = new XMLHttpRequest();
 
 
 
-        var loader = document.getElementById('pre-loader');
-        window.addEventListener('load', function() {
-            loader.style.display = 'none';
-        });
+        // var loader = document.getElementById('pre-loader');
+        // window.addEventListener('load', function() {
+        //     loader.style.display = 'none';
+        // });
+
+        // var prevScrollpos = window.pageYOffset;
+        // window.onscroll = function() {
+        // var currentScrollPos = window.pageYOffset;
+        //   if (prevScrollpos > currentScrollPos) {
+        //     document.getElementById("navbar").style.top = "0";
+        //     document.getElementById("ribbon").style.display= "none";
+        //   } else {
+        //     document.getElementById("navbar").style.top = "-50px";
+        //     document.getElementById("ribbon").style.display= "block";
+        //   }
+        //   prevScrollpos = currentScrollPos;
+        // }

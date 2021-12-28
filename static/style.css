@@ -1387,3 +1387,28 @@ body {
     color: var(--blue-color);
   }
 }
+
+
+.ribbon{
+  background-color: var(--green-color) !important;
+  width: 100vw !important;
+  font-family: var(--Nunito);
+  padding: 0.3rem 0;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  z-index: 9999999;
+}
+
+
+.click-rib{
+  color: white;
+  text-decoration: underline !important;
+  text-decoration-color: white !important;
+}
+
+.click-rib:hover{
+  color: #202020;
+  text-decoration: underline !important;
+  text-decoration-color: #202020 !important;
+}
