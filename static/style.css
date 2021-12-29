@@ -425,9 +425,6 @@ body {
   height: 100vh !important;
 }
 
-.blog-right {
-}
-
 .blog-desc {
   margin: 3rem 0 2rem 0 !important;
   font-size: var(--para-font-size);
