@@ -33,10 +33,10 @@ var request = new XMLHttpRequest();
 
 
 
-        // var loader = document.getElementById('pre-loader');
-        // window.addEventListener('load', function() {
-        //     loader.style.display = 'none';
-        // });
+        var loader = document.getElementById('pre-loader');
+        window.addEventListener('load', function() {
+            loader.style.display = 'none';
+        });
 
         // var prevScrollpos = window.pageYOffset;
         // window.onscroll = function() {
