@@ -179,7 +179,7 @@ img {
 
 .card-col-3 {
   position: absolute;
-  top: -4rem;
+  top: -7rem;
 }
 
 .card {
@@ -269,10 +269,32 @@ img {
   .card-col-1 {
     position: relative;
   }
-
+  
   .card-col-3 {
+    position: absolute;
+    top: 0rem;
+  }
+
+  .col-team-2{
+    margin: 2rem 0rem;
+  }
+
+  .card-col-2 {
     position: relative;
-    top: 6rem;
+    margin-bottom: 2rem;
+    margin-top: -2rem !important;
+  }
+
+  .card-row{
+    margin-top: 6rem !important;
+  }
+
+  .website-team .card-row{
+    margin-top: 2rem !important;
+  }
+
+  .navya-col{
+    margin-top: -1.7rem !important;
   }
 
   .navbar {
@@ -289,6 +311,19 @@ img {
   .menu-icon,
   .back-icon {
     width: 90% !important;
+  }
+
+  .first {
+    order: 1;
+  }
+
+  .third{
+    order: 3;
+
+  }
+
+  .second {
+    order: 2;
   }
 }
 
