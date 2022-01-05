@@ -11,7 +11,7 @@ function closeNav() {
 }
 
 var request = new XMLHttpRequest();
-        request.open('GET','https://api.github.com/users/GDSC-BVP-DET-Navi-Mumbai/repos' , 
+        request.open('GET','https://api.github.com/users/GDSC-BVPDET-NM/repos' , 
         true)
         request.onload = function() {
             var data = JSON.parse(this.response);
