@@ -1,8 +1,22 @@
-/* Set the width of the sidebar to 25rem  (show it) */
-function openNav() {
-  document.getElementById("mySidepanel").style.width = "30rem";
-  document.getElementById("overlay").style.width = "100vw";
-}
+// Temporary content start
+/*Automatic show popup after 1seconds*/
+const popup = document.querySelector(".popup");
+const close = document.querySelector(".close");
+window.onload = function () {
+  setTimeout(function () {
+    popup.style.display = "block";
+  }, 1000);
+};
+close.addEventListener("click", () => {
+  popup.style.display = "none";
+}),
+  // Temporary content end
+
+  /* Set the width of the sidebar to 25rem  (show it) */
+  function openNav() {
+    document.getElementById("mySidepanel").style.width = "30rem";
+    document.getElementById("overlay").style.width = "100vw";
+  };
 
 /* Set the width of the sidebar to 0 (hide it) */
 function closeNav() {
@@ -11,42 +25,42 @@ function closeNav() {
 }
 
 var request = new XMLHttpRequest();
-        request.open('GET','https://api.github.com/users/GDSC-BVPDET-NM/repos' , 
-        true)
-        request.onload = function() {
-            var data = JSON.parse(this.response);
-            console.log(data);
-            var statusHTML = '';
-            $.each(data, function(i, status){
-                statusHTML += '<a class="proj-link" href=""> \
+request.open("GET", "https://api.github.com/users/GDSC-BVPDET-NM/repos", true);
+request.onload = function () {
+  var data = JSON.parse(this.response);
+  console.log(data);
+  var statusHTML = "";
+  $.each(data, function (i, status) {
+    statusHTML +=
+      '<a class="proj-link" href=""> \
                 <div class="project-card"> \
-                    <h4>' + status.name +  '</h4> \
+                    <h4>' +
+      status.name +
+      '</h4> \
                     <div class="state"> \
                         \
                     </div> \
                 </div> \
            </a> ';
-            });
-            $('.repositories').html(statusHTML);
-        }
-        request.send();
+  });
+  $(".repositories").html(statusHTML);
+};
+request.send();
 
+var loader = document.getElementById("pre-loader");
+window.addEventListener("load", function () {
+  loader.style.display = "none";
+});
 
-
-        var loader = document.getElementById('pre-loader');
-        window.addEventListener('load', function() {
-            loader.style.display = 'none';
-        });
-
-        // var prevScrollpos = window.pageYOffset;
-        // window.onscroll = function() {
-        // var currentScrollPos = window.pageYOffset;
-        //   if (prevScrollpos > currentScrollPos) {
-        //     document.getElementById("navbar").style.top = "0";
-        //     document.getElementById("ribbon").style.display= "none";
-        //   } else {
-        //     document.getElementById("navbar").style.top = "-50px";
-        //     document.getElementById("ribbon").style.display= "block";
-        //   }
-        //   prevScrollpos = currentScrollPos;
-        // }
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+// var currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.getElementById("navbar").style.top = "0";
+//     document.getElementById("ribbon").style.display= "none";
+//   } else {
+//     document.getElementById("navbar").style.top = "-50px";
+//     document.getElementById("ribbon").style.display= "block";
+//   }
+//   prevScrollpos = currentScrollPos;
+// }
