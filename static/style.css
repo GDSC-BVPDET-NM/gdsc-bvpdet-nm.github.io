@@ -41,7 +41,6 @@ body {
   position: relative;
   width: 900px;
   height: 900px;
-  background-color: #fff;
 }
 .close {
   position: absolute;
@@ -49,6 +48,16 @@ body {
   right: 1.2rem;
   opacity: 0.8;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .popup {
+    top: 80%;
+  }
+  .contentbox {
+    width: 100vw !important;
+    height: 100vh !important;
+  }
 }
 
 /* Temporary content end */
