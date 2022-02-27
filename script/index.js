@@ -1,22 +1,8 @@
-// Temporary content start
-/*Automatic show popup after 1seconds*/
-const popup = document.querySelector(".popup");
-const close = document.querySelector(".close");
-window.onload = function () {
-  setTimeout(function () {
-    popup.style.display = "block";
-  }, 1000);
-};
-close.addEventListener("click", () => {
-  popup.style.display = "none";
-}),
-  // Temporary content end
-
-  /* Set the width of the sidebar to 25rem  (show it) */
-  function openNav() {
-    document.getElementById("mySidepanel").style.width = "30rem";
-    document.getElementById("overlay").style.width = "100vw";
-  };
+/* Set the width of the sidebar to 25rem  (show it) */
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "30rem";
+  document.getElementById("overlay").style.width = "100vw";
+}
 
 /* Set the width of the sidebar to 0 (hide it) */
 function closeNav() {
@@ -51,6 +37,20 @@ var loader = document.getElementById("pre-loader");
 window.addEventListener("load", function () {
   loader.style.display = "none";
 });
+
+// Temporary content start
+/*Automatic show popup after 2seconds*/
+const popup = document.querySelector(".popup");
+const close = document.querySelector(".close");
+window.onload = function () {
+  setTimeout(function () {
+    popup.style.display = "block";
+  }, 2000);
+};
+close.addEventListener("click", () => {
+  popup.style.display = "none";
+});
+// Temporary content end
 
 // var prevScrollpos = window.pageYOffset;
 // window.onscroll = function() {
