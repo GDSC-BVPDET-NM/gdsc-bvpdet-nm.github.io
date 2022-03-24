@@ -39,17 +39,17 @@ window.addEventListener("load", function () {
 });
 
 // Temporary content start
-/*Automatic show popup after 2seconds*/
-const popup = document.querySelector(".popup");
-const close = document.querySelector(".close");
-window.onload = function () {
-  setTimeout(function () {
-    popup.style.display = "block";
-  }, 2000);
-};
-close.addEventListener("click", () => {
-  popup.style.display = "none";
-});
+/*Automatic show popup after 2seconds alert related js code*/
+// const popup = document.querySelector(".popup");
+// const close = document.querySelector(".close");
+// window.onload = function () {
+//   setTimeout(function () {
+//     popup.style.display = "block";
+//   }, 2000);
+// };
+// close.addEventListener("click", () => {
+//   popup.style.display = "none";
+// });
 // Temporary content end
 
 // var prevScrollpos = window.pageYOffset;
