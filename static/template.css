@@ -125,11 +125,18 @@ body {
   border-radius: 0.6rem;
   border: 0.1rem solid #fff !important;
   transition: all 0.3s ease-in-out;
+
 }
 .team-page .active {
+  width: 50vw !important;
+text-align: center;
+  border: 2px solid white !important;
+  color: white !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease-in-out;
+
   background-color: #4286f5 !important;
-  color: #ffff !important;
-  border: transparent !important;
+  border:2px solid transparent !important;
 }
 .t22-23 {
   font-family: var(--Lato);
