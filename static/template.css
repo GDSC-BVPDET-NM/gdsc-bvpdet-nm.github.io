@@ -117,6 +117,7 @@ body {
 }
 .team-btn {
   background-color: transparent !important;
+  text-align: center !important;
   color: #ffff !important;
   font-family: var(--Lato);
   font-weight: 700;
@@ -127,9 +128,13 @@ body {
   transition: all 0.3s ease-in-out;
 }
 .team-page .active {
+  text-align: center !important;
   background-color: #4286f5 !important;
   color: #ffff !important;
-  border: transparent !important;
+  border: 2px solid transparent !important;
+  color: white !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease-in-out;
 }
 .t22-23 {
   font-family: var(--Lato);
@@ -359,6 +364,41 @@ img {
 
   .second {
     order: 2;
+  }
+
+  .team-btn {
+    font-family: var(--Lato);
+    font-weight: 400;
+    padding: 0.5rem 4rem;
+    font-size: var(--para-font-size-mobile) !important;
+    border-radius: 0.6rem;
+    border: 0.1rem solid #fff !important;
+    transition: all 0.3s ease-in-out;
+  }
+  .team-page .active {
+    text-align: center !important;
+    background-color: #4286f5 !important;
+    color: #ffff !important;
+    border: 2px solid transparent !important;
+    color: white !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease-in-out;
+  }
+  .t22-23 {
+    font-family: var(--Lato);
+    color: #ffff !important;
+    font-weight: 800;
+    font-size: var(--super-header-font-size-mobile) !important;
+    text-align: center !important;
+    padding: 15rem 0;
+  }
+  .t23-24 {
+    font-family: var(--Lato);
+    color: #ffff !important;
+    font-weight: 800;
+    font-size: var(--super-header-font-size-mobile) !important;
+    text-align: center !important;
+    padding: 15rem 0;
   }
 }
 
