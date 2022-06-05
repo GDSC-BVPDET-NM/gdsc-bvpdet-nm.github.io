@@ -1499,13 +1499,20 @@ body {
   color: white !important;
   border-radius: 8px !important;
   transition: all 0.3s ease-in-out;
- /* width: 50vw !important;*/
 text-align: center;
 }
 
 
 
 @media only screen and (max-width: 768px) {
+  .team-main .nav-link{
+  border: 2px solid white !important;
+  color: white !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease-in-out;
+ width: 50vw !important;
+text-align: center;
+}
   .team-main .nav{
     display: flex;
     flex-flow: row;
