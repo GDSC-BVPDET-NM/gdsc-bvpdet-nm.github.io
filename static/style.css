@@ -60,6 +60,7 @@ body {
     width: 100vw !important;
     height: 50vh !important;
   }
+
 }
 
 /* Temporary content end */
@@ -1486,4 +1487,40 @@ body {
   color: #202020;
   text-decoration: underline !important;
   text-decoration-color: #202020 !important;
+}
+
+.tab-contain{
+  width: 100%;
+  padding-left: 5rem !important;
+}
+
+.team-main .nav-link{
+  border: 2px solid white !important;
+  color: white !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease-in-out;
+  width: 50vw !important;
+text-align: center;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .team-main .nav{
+    display: flex;
+    flex-flow: row;
+    width: 100% !important;
+  }
+
+  .tab-contain{
+    padding-left: 1rem !important;
+    display: flex;
+    flex-flow: column;
+    overflow-x: scroll !important;
+  }
+
+  .team-contain .nav-tabs{
+    width: 100% !important;
+  }
+
 }
