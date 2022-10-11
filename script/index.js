@@ -33,10 +33,10 @@ request.onload = function () {
 };
 request.send();
 
-var loader = document.getElementById("pre-loader");
-window.addEventListener("load", function () {
-  loader.style.display = "none";
-});
+// loader Script
+setTimeout(function() {
+  $("#pre-loader").fadeToggle();
+},4000);
 
 // Temporary content start
 /*Automatic show popup after 2seconds alert related js code*/
