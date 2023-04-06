@@ -186,6 +186,10 @@ img {
   border: 4px solid #fabb04 !important;
 }
 
+.champ-card {
+  border: 4px solid #14b25f !important;
+}
+
 .cards_item {
   display: flex;
   padding: 1rem;
@@ -227,8 +231,10 @@ img {
   max-height: 270px !important;
 }
 .card_image > img {
+  height: 160px !important;
   width: 100% !important;
-  object-fit: cover !important;
+  object-fit: fill !important;
+  transform: rotateZ(2deg);
 }
 .card_content {
   padding: 1rem;
