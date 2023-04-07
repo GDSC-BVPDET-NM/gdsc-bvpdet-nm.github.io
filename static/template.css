@@ -234,7 +234,6 @@ img {
   height: 160px !important;
   width: 100% !important;
   object-fit: fill !important;
-  transform: rotateZ(2deg);
 }
 .card_content {
   padding: 1rem;
