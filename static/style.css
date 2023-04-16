@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --primaryred: #f74037;
+  --primaryblue: #4a90f4;
+  --primarygreen: #14b25f;
+  --primaryyellow: #ffb808;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -27,43 +34,6 @@ body {
   --green-color: #109d58;
   --yellow-color: #fabb04;
 }
-
-/* Temporary content start */
-.popup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 9991;
-  display: none;
-}
-.contentbox {
-  position: absolute;
-  width: 800px;
-  height: 800px;
-  background-image: url("https://raw.githubusercontent.com/GDSC-BVPDET-NM/gdsc-bvpdet-nm.github.io/7bc0fb1fbb4d5fd38707178b26e32e9a1f202a40/img/alert.svg");
-  background-size: cover;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.close {
-  position: absolute;
-  top: 1.2rem;
-  right: 1.2rem;
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-@media only screen and (max-width: 768px) {
-  .contentbox {
-    width: 100vw !important;
-    height: 50vh !important;
-  }
-
-}
-
-/* Temporary content end */
 
 .para {
   font-size: 1.5rem;
@@ -217,23 +187,17 @@ body {
   align-items: flex-start;
   flex-flow: column wrap;
 }
-.g1 {
-  color: #4286f5;
+.google-blue {
+  color: #4286f5 !important;
 }
-.o1 {
-  color: #d03e32;
+.google-red {
+  color: #d03e32 !important;
 }
-.o2 {
-  color: #fabb04;
+.google-yellow {
+  color: #fabb04 !important;
 }
-.g2 {
-  color: #4286f5;
-}
-.l {
-  color: #109d58;
-}
-.e {
-  color: #ea4235;
+.google-green {
+  color: #109d58 !important;
 }
 .hero-title {
   font-size: var(--super-header-font-size);
@@ -245,11 +209,11 @@ body {
 .hero-desc {
   font-size: var(--para-font-size);
   font-weight: 300;
-  width: 30rem;
+  width: calc(100% - 4rem);
   font-family: var(--Nunito);
   line-height: 1.5;
   color: #fff;
-  margin: 3rem 0 2rem 0;
+  margin: 2rem 0;
 }
 .hero-btn {
   background-color: var(--blue-color);
@@ -529,12 +493,12 @@ body {
   margin-bottom: 2rem;
 }
 .contact-desc {
+  width: calc(40%);
   font-size: var(--para-font-size);
   font-weight: 600;
   font-family: var(--Nunito);
   line-height: 1.5;
   color: #fff;
-  margin: 5rem 30rem 2rem 30rem;
 }
 .contact-btn {
   margin-top: 2rem;
@@ -571,12 +535,13 @@ body {
   color: #fff;
 }
 .project-desc {
+  margin-top: 3rem;
+  width: calc(40%);
   font-size: var(--para-font-size);
   font-weight: 600;
   font-family: var(--Nunito);
   line-height: 1.5;
   color: #fff;
-  margin: 5rem 29rem 2rem 29rem;
 }
 .project-btn {
   margin-top: 2rem;
@@ -905,15 +870,6 @@ body {
     line-height: 1.1;
     color: #fff;
   }
-  .contact-desc {
-    font-size: var(--para-font-size-mobile);
-    font-weight: 600;
-    font-family: var(--Nunito);
-    line-height: 1.5;
-    color: #fff;
-    padding: 0 2rem;
-    margin: 0rem;
-  }
 
   .contact-area .social-contact-icons img {
     width: 2rem;
@@ -1029,9 +985,69 @@ body {
   width: 25rem;
 }
 
+svg.pre-logo {
+  visibility: visible;
+}
+
+svg.pre-logo line {
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 140px;
+}
+
+@keyframes line_forward {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes line_reverse {
+  100% {
+    stroke-dashoffset: 640;
+  }
+}
+
+svg.pre-logo line:nth-child(1) {
+  stroke: var(--primaryyellow);
+  stroke-dasharray: 320;
+  stroke-dashoffset: 320;
+  animation: line_forward ease forwards;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+}
+
+svg.pre-logo line:nth-child(2) {
+  stroke: var(--primarygreen);
+  stroke-dasharray: 320;
+  stroke-dashoffset: 320;
+  animation: line_reverse ease forwards;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+}
+
+svg.pre-logo line:nth-child(3) {
+  stroke: var(--primaryred);
+  stroke-dasharray: 320;
+  stroke-dashoffset: 320;
+  animation: line_forward ease forwards;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+}
+
+svg.pre-logo line:nth-child(4) {
+  stroke: var(--primaryblue);
+  stroke-dasharray: 320;
+  stroke-dashoffset: 320;
+  animation: line_reverse ease forwards;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+}
+
 .pre-para {
   color: white;
-  font-size: 1.2rem;
+  width: 50%;
+  font-weight: 800;
+  font-size: 2rem;
   font-family: var(--Nunito);
 }
 
@@ -1418,7 +1434,7 @@ body {
 }
 
 .pre-logo {
-  width: 25rem;
+  width: calc(100vw / 2);
 }
 
 .pre-para {
@@ -1489,45 +1505,58 @@ body {
   text-decoration-color: #202020 !important;
 }
 
-.tab-contain{
+.tab-contain {
   width: 100%;
   padding-left: 5rem !important;
 }
 
-.team-main .nav-link{
+.team-main .nav-link {
   border: 2px solid white !important;
   color: white !important;
   border-radius: 8px !important;
   transition: all 0.3s ease-in-out;
-text-align: center;
+  text-align: center;
 }
 
-
+@media (max-width: 1024px) {
+  .pre-para {
+    width: 75vw;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .contact-desc {
+    font-size: var(--para-font-size-mobile);
+    width: calc(100vw - 4rem);
+  }
+  .project-desc {
+    font-size: var(--para-font-size-mobile);
+    width: calc(100vw - 4rem);
+  }
+}
 
 @media only screen and (max-width: 768px) {
-  .team-main .nav-link{
-  border: 2px solid white !important;
-  color: white !important;
-  border-radius: 8px !important;
-  transition: all 0.3s ease-in-out;
- width: 50vw !important;
-text-align: center;
-}
-  .team-main .nav{
+  .team-main .nav-link {
+    border: 2px solid white !important;
+    color: white !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease-in-out;
+    width: 50vw !important;
+    text-align: center;
+  }
+  .team-main .nav {
     display: flex;
     flex-flow: row;
     width: 100% !important;
   }
 
-  .tab-contain{
+  .tab-contain {
     padding-left: 1rem !important;
     display: flex;
     flex-flow: column;
     overflow-x: scroll !important;
   }
 
-  .team-contain .nav-tabs{
+  .team-contain .nav-tabs {
     width: 100% !important;
   }
-
 }

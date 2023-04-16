@@ -17,7 +17,7 @@ body {
   font-family: "Nunito", sans-serif !important;
 }
 
-.navbar {
+.bar {
   background-color: var(--primary-color) !important;
   padding: 1rem 2rem;
 }
@@ -126,10 +126,8 @@ body {
   border-radius: 0.6rem;
   border: 0.1rem solid #fff !important;
   transition: all 0.3s ease-in-out;
-
 }
 .team-page .active {
-
   text-align: center !important;
   background-color: #4286f5 !important;
   color: #ffff !important;
@@ -137,15 +135,6 @@ body {
   color: white !important;
   border-radius: 8px !important;
   transition: all 0.3s ease-in-out;
-
-}
-.t22-23 {
-  font-family: var(--Lato);
-  color: #ffff !important;
-  font-weight: 800;
-  font-size: var(--super-header-font-size-mobile) !important;
-  text-align: center !important;
-  padding: 15rem 0;
 }
 .t23-24 {
   font-family: var(--Lato);
@@ -157,9 +146,6 @@ body {
 }
 /*Our tem related  end */
 
-.main-text {
-  margin-top: 5rem;
-}
 .text {
   font-family: "Nunito", sans-serif;
   font-weight: 900;
@@ -200,10 +186,13 @@ img {
   border: 4px solid #fabb04 !important;
 }
 
+.champ-card {
+  border: 4px solid #14b25f !important;
+}
+
 .cards_item {
   display: flex;
   padding: 1rem;
-
   margin-top: 1rem;
 }
 
@@ -239,6 +228,12 @@ img {
 .card_image {
   background-color: #fff;
   padding: 3.4px;
+  max-height: 270px !important;
+}
+.card_image > img {
+  height: 160px !important;
+  width: 100% !important;
+  object-fit: fill !important;
 }
 .card_content {
   padding: 1rem;
@@ -268,40 +263,13 @@ img {
   font-weight: 800;
   text-align: left;
 }
-.card-logo_item {
-  margin-top: 7rem;
-  margin-left: 0rem;
+.card-logo-item {
+  display: flex;
+  position: relative;
+  width: 9.6rem;
 }
 .card-logo {
-  padding: 4rem;
-  list-style: none;
-  margin: 1rem;
-  margin-left: -4rem;
-  margin-top: -10rem;
-  width: 9.6rem;
-}
-.card-logo1 {
-  padding: 4rem;
-
-  margin-left: -1.8rem;
-  margin-top: -10.6rem;
-  width: 9.6rem;
-}
-.card-logo2 {
-  padding: 4rem;
-  list-style: none;
-  margin: 1rem;
-  margin-left: 0.5rem;
-  margin-top: -9.6rem;
-  width: 9.6rem;
-}
-.card-logo3 {
-  padding: 4rem;
-  list-style: none;
-  margin: 1rem;
-  margin-left: 2.6rem;
-  margin-top: -10.6rem;
-  width: 9.6rem;
+  padding: 3px;
 }
 
 .center-col {

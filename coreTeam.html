@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    
-    <link rel="stylesheet" href="./static/style.css">
-    <link rel="stylesheet" href="./static/template.css">
-
-    
-  <link rel="icon" type="image/x-icon" href="/img/pre-logo.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/pre-logo.svg">
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./static/style.css" />
+    <link rel="stylesheet" href="./static/template.css" />
+    <link rel="icon" type="image/x-icon" href="/img/pre-logo.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/pre-logo.svg" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link
       rel="stylesheet"
@@ -22,491 +17,1374 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-
-    <title>Team of 2021-22 | Lead: Harsh Kothari</title>
-</head>
-<body>
-   
+    <title>Our GDSC Team</title>
+  </head>
+  <body>
     <!-- NAVBAR part start -->
     <header class="header-area">
-        <!-- navbar start -->
-        <nav class="navbar navbar-expand-lg fixed-top">
-          <a class="navbar-brand" href="./index.html">
-            <img src="img/logo.svg" alt="Logo" class="logo" />
-          </a>
-          <div class="mr-auto"></div>
-  
-          <button class="navbar-menu" onclick="openNav()">
-            <img src="img/Desktop-menu-icon.svg" alt="Logo" class="menu-icon" />
-          </button>
-        </nav>
-        <!-- side menu -->
-        <div id="mySidepanel" class="sidepanel">
-          <a target="_blank" href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-            <img src="img/go-back.svg" alt="Back" class="back-icon"
-          /></a>
-          <a onclick="closeNav()" class="smenu" href="./index.html">Home</a>
-          <a onclick="closeNav()" class="smenu" href="#aboutArea">About Us</a>
-          <a onclick="closeNav()" class="smenu" href="./coreTeam.html">Team</a>
-          <a onclick="closeNav()" class="smenu" target="_blank" href="https://github.com/GDSC-BVPDET-NM">Projects</a>
-          <a onclick="closeNav()" class="smenu" href="#">Blogs</a>
-          <a onclick="closeNav()" class="smenu" href="#contactArea">Contact Us</a>
-        </div>
-        <!-- Dark Overlay element -->
-        <div class="overlay" id="overlay"></div>
-      </header>
-  <!-- Main part start -->
-   
-
-
+      <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="./index.html">
+          <img src="img/logo.svg" alt="Logo" class="logo" />
+        </a>
+        <div class="mr-auto"></div>
+        <button class="navbar-menu" onclick="openNav()">
+          <img src="img/Desktop-menu-icon.svg" alt="Logo" class="menu-icon" />
+        </button>
+      </nav>
+      <!-- side menu -->
+      <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          <img src="img/go-back.svg" alt="Back" class="back-icon"
+        /></a>
+        <a onclick="closeNav()" class="smenu" href="./index.html">Home</a>
+        <a onclick="closeNav()" class="smenu" href="./index.html#aboutArea"
+          >About Us</a
+        >
+        <a onclick="closeNav()" class="smenu" href="./coreTeam.html">Team</a>
+        <a
+          onclick="closeNav()"
+          class="smenu"
+          target="_blank"
+          href="https://github.com/GDSC-BVPDET-NM"
+          >Projects</a
+        >
+        <a onclick="closeNav()" class="smenu" href="#">Blogs</a>
+        <a onclick="closeNav()" class="smenu" href="#contactArea">Contact Us</a>
+      </div>
+      <!-- Dark Overlay element -->
+      <div class="overlay" id="overlay"></div>
+    </header>
+    <!-- Main part start -->
     <main class="team-main">
-        <section class="team-cards">
-            <div class="tab-contain tab-bar">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs team-page " role="tablist">
-                  <li class="nav-item">
-
-                    <a class="nav-link active team-btn" data-toggle="tab" href="#Team_of_2021-22">The Founding Team</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link team-btn " data-toggle="tab" href="#Team_of_2022-23">Team of 2022-23</a>
-                  </li>
-                  <!-- <li class="nav-item">
-                    <a class="nav-link team-btn" data-toggle="tab" href="#Team_of_2023-24">Team of 2023-24</a>
-
-                  </li> -->
-                </ul> 
-            </div>
-        
-    <div class="main-text  text-center">
-        <h1 class="hero-title">
+      <section class="team-cards">
+        <div class="tab-contain tab-bar">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs team-page" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link team-btn"
+                data-toggle="tab"
+                href="#Team-2021-22"
+                >The Founding Team</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active team-btn"
+                data-toggle="tab"
+                href="#Team-2022-23"
+                >Team of 2022-23</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link team-btn"
+                data-toggle="tab"
+                href="#Team-2023-24"
+                >Team of 2023-24</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="text-center mt-5">
+          <h1 class="hero-title">
             Our
-            <span class="g1">T</span><span class="o1">e</span
-            ><span class="o2">a</span><span class="g2">m</span
-            > 
+            <span class="google-blue">T</span><span class="google-red">e</span
+            ><span class="google-yellow">a</span
+            ><span class="google-blue">m</span>
           </h1>
-  </div>
-  <div class="para">Teamwork Makes the <br>Dream work!</br></div>
-         <!-- Tab panes -->
-         <div class="tab-content">
-            <div id="Team_of_2021-22" class="container tab-pane active"><br>
-                <div class="container">
-                    <div class="row card-row reorder">
-                        <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-xs-12 center-col first">
-                            
-                        </div>
-                        <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-xs-12 center-col second">
-                            <div class="card lead-card" data-aos="fade-up" data-aos-delay="200">
-                                <div class="card_image"><img src="img\CL-H.svg"></div>
-                                <div class="card_content">
-                                  <h4 class="card_title">GDSC Lead</h4>
-                                  <h1 class="card_text">Harsh Kothari</h1>
-                                  <div class="card-logo_item">
-                                  <div class="card-logo">
-                                      <a target="_blank" href="https://www.linkedin.com/in/harsh-kothari-b1820767">
-                                          <img src="img/LinkedIN_white.svg" alt="" srcset="">
-                                      </a>
-                                  </div>
-                   
-                                  <div class="card-logo1">
-                                      <a target="_blank" href="https://instagram.com/_harshkothari_">
-                                          <img src="img/Instagram_black.svg" alt="" srcset="">
-                                      </a>
-                                 
-                                  </div>
-                                  
-                                  <div class="card-logo2">
-                                      <a target="_blank" href="https://github.com/toHarsh">
-                                          <img src="img/Github_black.svg" alt="" srcset="">
-                                      </a>
-                                 
-                                  </div>
-                                  <div class="card-logo3">
-                                      <a target="_blank" href="https://harshkothari.in/">
-                                          <img src="img/www..svg" alt="" srcset="">
-                                      </a>
-                                  
-                                  </div>
-                              </div>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-xs-12 center-col">
-                            
-                        </div>
+        </div>
+        <div class="para">Teamwork Makes the <br />Dream work!</div>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div id="Team-2021-22" class="container tab-pane fade">
+            <div class="container mx-auto">
+              <div class="row card-row">
+                <div
+                  class=" center-col mx-auto"
+                >
+                  <div
+                    class="card lead-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image">
+                      <img src="img\CoreTeam21\CL-H.svg" />
                     </div>
-                    <div class="row card-row">
-                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-1">
-                            <div class="card core-team-card" data-aos="fade-up" data-aos-delay="200">
-                                <div class="card_image"><img src="img/CT-U.svg"></div>
-                                <div class="card_content">
-                                  <h4 class="card_title">Core Team Member</h4>
-                                  <h1 class="card_text">Ujjawal Kumar</h1>
-                                  <div class="card-logo_item">
-                                  <div class="card-logo">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/LinkedIN_white.svg" alt="" srcset="">
-                                      </a>
-                                  </div>
-                   
-                                  <div class="card-logo1">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/Instagram_black.svg" alt="" srcset="">
-                                      </a>
-                                 
-                                  </div>
-                                  
-                                  <div class="card-logo2">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/Github_black.svg" alt="" srcset="">
-                                      </a>
-                                 
-                                  </div>
-                                  <div class="card-logo3">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/www..svg" alt="" srcset="">
-                                      </a>
-                                  
-                                  </div>
-                              </div>
-                                </div>
-                              </div>
+                    <div class="card_content">
+                      <h4 class="card_title">GDSC Lead</h4>
+                      <h1 class="card_text">Harsh Kothari</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://www.linkedin.com/in/harsh-kothari-b1820767"
+                          >
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
                         </div>
-                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-2">
-                            <div class="card core-team-card" data-aos="fade-up" data-aos-delay="200">
-                                <div class="card_image"><img src="img/CT-D.svg"></div>
-                                <div class="card_content">
-                                  <h4 class="card_title">Core Team Member</h4>
-                                  <h1 class="card_text">Divyashil Agale</h1>
-                                  <div class="card-logo_item">
-                                  <div class="card-logo">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/LinkedIN_white.svg" alt="" srcset="">
-                                      </a>
-                                  </div>
-                   
-                                  <div class="card-logo1">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/Instagram_black.svg" alt="" srcset="">
-                                      </a>
-                                 
-                                  </div>
-                                  
-                                  <div class="card-logo2">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/Github_black.svg" alt="" srcset="">
-                                      </a>
-                                 
-                                  </div>
-                                  <div class="card-logo3">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/www..svg" alt="" srcset="">
-                                      </a>
-                                  
-                                  </div>
-                              </div>
-                                </div>
-                              </div>
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://instagram.com/_harshkothari_"
+                          >
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
                         </div>
-                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-3">
-                            <div class="card core-team-card" data-aos="fade-up" data-aos-delay="200">
-                                <div class="card_image"><img src="img/CT-S.svg"></div>
-                                <div class="card_content">
-                                  <h4 class="card_title">Core Team Member</h4>
-                                  <h1 class="card_text">Srishti Arya</h1>
-                                  <div class="card-logo_item">
-                                  <div class="card-logo">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/LinkedIN_white.svg" alt="" srcset="">
-                                      </a>
-                                  </div>
-                   
-                                  <div class="card-logo1">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/Instagram_black.svg" alt="" srcset="">
-                                      </a>
-                                 
-                                  </div>
-                                  
-                                  <div class="card-logo2">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/Github_black.svg" alt="" srcset="">
-                                      </a>
-                                 
-                                  </div>
-                                  <div class="card-logo3">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/www..svg" alt="" srcset="">
-                                      </a>
-                                  
-                                  </div>
-                              </div>
-                                </div>
-                              </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://github.com/toHarsh">
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
                         </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://harshkothari.in/">
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
                     </div>
-                    <div class="row card-row">
-                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-1">
-                            <div class="card core-team-card" data-aos="fade-up" data-aos-delay="200">
-                                <div class="card_image"><img src="img/CT-T.svg"></div>
-                                <div class="card_content">
-                                  <h4 class="card_title">Core Team Member</h4>
-                                  <h1 class="card_text">Toshif Chhipa</h1>
-                                  <div class="card-logo_item">
-                                  <div class="card-logo">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/LinkedIN_white.svg" alt="" srcset="">
-                                      </a>
-                                  </div>
-                   
-                                  <div class="card-logo1">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/Instagram_black.svg" alt="" srcset="">
-                                      </a>
-                                 
-                                  </div>
-                                  
-                                  <div class="card-logo2">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/Github_black.svg" alt="" srcset="">
-                                      </a>
-                                 
-                                  </div>
-                                  <div class="card-logo3">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/www..svg" alt="" srcset="">
-                                      </a>
-                                  
-                                  </div>
-                              </div>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-2">
-                            <div class="card core-team-card" data-aos="fade-up" data-aos-delay="200">
-                                <div class="card_image"><img src="img/CT-N.svg"></div>
-                                <div class="card_content">
-                                  <h4 class="card_title">Core Team Member</h4>
-                                  <h1 class="card_text">Navya Arya</h1>
-                                  <div class="card-logo_item">
-                                  <div class="card-logo">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/LinkedIN_white.svg" alt="" srcset="">
-                                      </a>
-                                  </div>
-                   
-                                  <div class="card-logo1">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/Instagram_black.svg" alt="" srcset="">
-                                      </a>
-                                 
-                                  </div>
-                                  
-                                  <div class="card-logo2">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/Github_black.svg" alt="" srcset="">
-                                      </a>
-                                 
-                                  </div>
-                                  <div class="card-logo3">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/www..svg" alt="" srcset="">
-                                      </a>
-                                  
-                                  </div>
-                              </div>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-3">
-                            <div class="card core-team-card" data-aos="fade-up" data-aos-delay="200">
-                                <div class="card_image"><img src="img/CT-P.svg"></div>
-                                <div class="card_content">
-                                  <h4 class="card_title">Core Team Member</h4>
-                                  <h1 class="card_text">Priyanshu Sahu</h1>
-                                  <div class="card-logo_item">
-                                  <div class="card-logo">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/LinkedIN_white.svg" alt="" srcset="">
-                                      </a>
-                                  </div>
-                   
-                                  <div class="card-logo1">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/Instagram_black.svg" alt="" srcset="">
-                                      </a>
-                                 
-                                  </div>
-                                  
-                                  <div class="card-logo2">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/Github_black.svg" alt="" srcset="">
-                                      </a>
-                                 
-                                  </div>
-                                  <div class="card-logo3">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/www..svg" alt="" srcset="">
-                                      </a>
-                                  
-                                  </div>
-                              </div>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="row card-row">
-                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-1 first">
-                            <div class="card core-team-card" data-aos="fade-up" data-aos-delay="200">
-                                <div class="card_image"><img src="img/CT-K.svg"></div>
-                                <div class="card_content">
-                                  <h4 class="card_title">Core Team Member</h4>
-                                  <h1 class="card_text">Krishan Pathak</h1>
-                                  <div class="card-logo_item">
-                                  <div class="card-logo">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/LinkedIN_white.svg" alt="" srcset="">
-                                      </a>
-                                  </div>
-                   
-                                  <div class="card-logo1">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/Instagram_black.svg" alt="" srcset="">
-                                      </a>
-                                 
-                                  </div>
-                                  
-                                  <div class="card-logo2">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/Github_black.svg" alt="" srcset="">
-                                      </a>
-                                 
-                                  </div>
-                                  <div class="card-logo3">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/www..svg" alt="" srcset="">
-                                      </a>
-                                  
-                                  </div>
-                              </div>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-2 third">
-                            
-                        </div>
-                        <!-- <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-3 second navya-col">
-                            <div class="card core-team-card" data-aos="fade-up" data-aos-delay="200">
-                                <div class="card_image"><img src="img/CT-u.svg"></div>
-                                <div class="card_content">
-                                  <h4 class="card_title">Core Team Member</h4>
-                                  <h1 class="card_text">New Member </h1>
-                                  <div class="card-logo_item">
-                                  <div class="card-logo">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/LinkedIN_white.svg" alt="" srcset="">
-                                      </a>
-                                  </div>
-                   
-                                  <div class="card-logo1">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/Instagram_black.svg" alt="" srcset="">
-                                      </a>
-                                 
-                                  </div>
-                                  
-                                  <div class="card-logo2">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/Github_black.svg" alt="" srcset="">
-                                      </a>
-                                 
-                                  </div>
-                                  <div class="card-logo3">
-                                      <a target="_blank" href="http://">
-                                          <img src="img/www..svg" alt="" srcset="">
-                                      </a>
-                                  
-                                  </div>
-                              </div>
-                                </div>
-                              </div>
-                        </div> -->
-                    </div>
+                  </div>
                 </div>
-            
-            
-            </div>
-            <div id="Team_of_2022-23" class="container tab-pane fade"><br>
-              <div class="t22-23">
-                  On the Way.....
+              </div>
+              <div class="row card-row">
+                <div
+                  class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-1"
+                >
+                  <div
+                    class="card core-team-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image">
+                      <img src="img/CoreTeam21/CT-U.svg" />
+                    </div>
+                    <div class="card_content">
+                      <h4 class="card_title">Core Team Member</h4>
+                      <h1 class="card_text">Ujjawal Kumar</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-2"
+                >
+                  <div
+                    class="card core-team-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image">
+                      <img src="img/CoreTeam21/CT-D.svg" />
+                    </div>
+                    <div class="card_content">
+                      <h4 class="card_title">Core Team Member</h4>
+                      <h1 class="card_text">Divyashil Agale</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-3"
+                >
+                  <div
+                    class="card core-team-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image">
+                      <img src="img/CoreTeam21/CT-S.svg" />
+                    </div>
+                    <div class="card_content">
+                      <h4 class="card_title">Core Team Member</h4>
+                      <h1 class="card_text">Srishti Arya</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row card-row">
+                <div
+                  class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-1"
+                >
+                  <div
+                    class="card core-team-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image">
+                      <img src="img/CoreTeam21/CT-T.svg" />
+                    </div>
+                    <div class="card_content">
+                      <h4 class="card_title">Core Team Member</h4>
+                      <h1 class="card_text">Toshif Chhipa</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-2"
+                >
+                  <div
+                    class="card core-team-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image">
+                      <img src="img/CoreTeam21/CT-N.svg" />
+                    </div>
+                    <div class="card_content">
+                      <h4 class="card_title">Core Team Member</h4>
+                      <h1 class="card_text">Navya Arya</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-3"
+                >
+                  <div
+                    class="card core-team-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image">
+                      <img src="img/CoreTeam21/CT-P.svg" />
+                    </div>
+                    <div class="card_content">
+                      <h4 class="card_title">Core Team Member</h4>
+                      <h1 class="card_text">Priyanshu Sahu</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row card-row">
+                <div
+                  class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-1 first"
+                >
+                  <div
+                    class="card core-team-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image">
+                      <img src="img/CoreTeam21/CT-K.svg" />
+                    </div>
+                    <div class="card_content">
+                      <h4 class="card_title">Core Team Member</h4>
+                      <h1 class="card_text">Krishan Pathak</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div id="Team_of_2023-24" class="container tab-pane fade"><br>
-                <div class="t23-24">
-                    On the Way.....
+          </div>
+          <div id="Team-2022-23" class="container tab-pane active">
+            <div class="container">
+              <div class="row card-row">
+                <div
+                  class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-xs-12 center-col mx-auto"
+                >
+                  <div
+                    class="card lead-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image"><img src="./img/CoreTeam22/CL-PG.jpeg" /></div>
+                    <div class="card_content">
+                      <h4 class="card_title">GDSC Lead</h4>
+                      <h1 class="card_text">Poorva Gupta</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://www.linkedin.com/in/poorvagupta18/"
+                          >
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://instagram.com/poorvaa.a18?igshid=YmMyMTA2M2Y="
+                          >
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://github.com/poorvaa18"
+                          >
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://guptapoorva.netlify.app/"
+                          >
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="row card-row">
+                <div
+                  class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-1"
+                >
+                  <div
+                    class="card core-team-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image">
+                      <img src="./img/CoreTeam22/CT-GM.jpg" />
+                    </div>
+                    <div class="card_content">
+                      <h4 class="card_title">Machine Learning Lead</h4>
+                      <h1 class="card_text">Gaurang Manchekar</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://www.linkedin.com/in/gaurang-manchekar-8926a6201/"
+                          >
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://instagram.com/gaurangmanchekar?igshid=YmMyMTA2M2Y="
+                          >
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://github.com/GaurangPM-19"
+                          >
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-2"
+                >
+                  <div
+                    class="card core-team-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image">
+                      <img src="./img/CoreTeam22/CT-JV.jpeg" />
+                    </div>
+                    <div class="card_content">
+                      <h4 class="card_title">Blockchain Lead</h4>
+                      <h1 class="card_text">Jetra Vyas</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://www.linkedin.com/in/jetra-vyas-96809322a/"
+                          >
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://instagram.com/jetravyas_?igshid=YmMyMTA2M2Y="
+                          >
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://github.com/JetraCodes"
+                          >
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-3"
+                >
+                  <div
+                    class="card core-team-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image">
+                      <img src="./img/CoreTeam22/CT-GS.jpg" />
+                    </div>
+                    <div class="card_content">
+                      <h4 class="card_title">Design Lead</h4>
+                      <h1 class="card_text">Girish Shedge</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://www.linkedin.com/in/girish-shedge-9337571b8/"
+                          >
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://instagram.com/girishedge_?igshid=YmMyMTA2M2Y="
+                          >
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://github.com/Girish-shedge"
+                          >
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://www.behance.net/girishshedge"
+                          >
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row card-row">
+                <div
+                  class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-1"
+                >
+                  <div
+                    class="card core-team-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image">
+                      <img src="./img/CoreTeam22/CT-SP.jpeg" />
+                    </div>
+                    <div class="card_content">
+                      <h4 class="card_title">Web Development Lead</h4>
+                      <h1 class="card_text">Samiksha Pawar</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://www.linkedin.com/in/samiksha-pawar-06bbb8209/"
+                          >
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://instagram.com/samikshapawarr?igshid=YmMyMTA2M2Y="
+                          >
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://github.com/Samiksha-2002"
+                          >
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://www.behance.net/samikshapawar3"
+                          >
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-2"
+                >
+                  <div
+                    class="card core-team-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image">
+                      <img src="./img/CoreTeam22/CT-AS.jpg" />
+                    </div>
+                    <div class="card_content">
+                      <h4 class="card_title">Cloud Lead</h4>
+                      <h1 class="card_text">Amaan Shaikh</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://www.linkedin.com/in/amaan-shaikh-468ab112a/"
+                          >
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://github.com/amaans751"
+                          >
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col card-col-3"
+                >
+                  <div
+                    class="card core-team-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image">
+                      <img src="./img/CoreTeam22/CT-MS.jpeg" />
+                    </div>
+                    <div class="card_content">
+                      <h4 class="card_title">Media,PR,Management Lead</h4>
+                      <h1 class="card_text">Manisha Singh</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://www.linkedin.com/in/manisha-singh-1b8803227/"
+                          >
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a
+                            target="_blank"
+                            href="https://instagram.com/manishaaa.a?igshid=YmMyMTA2M2Y="
+                          >
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a target="_blank" href="https://">
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Champs Section-->
+            <div class="container">
+              <div class="row mt-5">
+                <div class="mx-auto text-center pt-5">
+                  <h1 class="hero-title">
+                    Our
+                    <span class="google-blue">C</span
+                    ><span class="google-red">h</span
+                    ><span class="google-yellow">a</span
+                    ><span class="google-blue">m</span
+                    ><span class="google-red">p</span
+                    ><span class="google-green">s</span>
+                  </h1>
+                </div>
+              </div>
+              <div class="row card-row">
+                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col">
+                  <div class="card champ-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card_image"><img src="./img/GDSCChamps22/GC-KK.jpg" /></div>
+                    <div class="card_content">
+                      <h4 class="card_title">Team Member</h4>
+                      <h1 class="card_text">Kamran Khan</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a
+                            href="https://linkedin.com/in/kamran1819g"
+                            target="_blank"
+                          >
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a
+                            href="https://instagram.com/kamran1819g"
+                            target="_blank"
+                          >
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a
+                            href="https://github.com/kamran1819g"
+                            target="_blank"
+                          >
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a
+                            href="https://kamran1819g.vercel.app"
+                            target="_blank"
+                          >
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col col-team-2">
+                  <div
+                    class="card champ-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image"><img src="./img/GDSCChamps22/GC-AS.jpeg" /></div>
+                    <div class="card_content">
+                      <h4 class="card_title">Team Member</h4>
+                      <h1 class="card_text">Ayushi Singh</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a href="https://www.linkedin.com/in/ayushi-singh-a47100230" target="_blank">
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://www.instagram.com/the_ayushisingh/" target="_blank">
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://github.com/ayushisingh65" target="_blank">
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col">
+                  <div
+                    class="card champ-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image"><img src="./img/GDSCChamps22/GC-GG.jpg" /></div>
+                    <div class="card_content">
+                      <h4 class="card_title">Team Member</h4>
+                      <h1 class="card_text">Gauri Ghadge</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a href="https://www.linkedin.com/in/gauri-ghadge/" target="_blank">
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://instagram.com/gauriiighadge?igshid=YmMyMTA2M2Y=" target="_blank">
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://github.com/GhadgeGauri" target="_blank">
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://gauri30.netlify.app/" target="_blank">
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row card-row">
+                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col">
+                  <div
+                    class="card champ-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image"><img src="./img/GDSCChamps22/GC-DJ.jpg" /></div>
+                    <div class="card_content">
+                      <h4 class="card_title">Team Member</h4>
+                      <h1 class="card_text">Disha Jain</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://instagram.com/dishaaa_jain?igshid=YmMyMTA2M2Y=" target="_blank">
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col col-team-2">
+                  <div
+                    class="card champ-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image"><img src="./img/GDSCChamps22/GC-SB.jpg" /></div>
+                    <div class="card_content">
+                      <h4 class="card_title">Team Member</h4>
+                      <h1 class="card_text">Soham Bait</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col">
+                  <div
+                    class="card champ-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image"><img src="./img/GDSCChamps22/GC-AG.jpg" /></div>
+                    <div class="card_content">
+                      <h4 class="card_title">Team Member</h4>
+                      <h1 class="card_text">Aditya Guha</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row card-row">            
+                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col">
+                  <div
+                    class="card champ-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image"><img src="./img/GDSCChamps22/GC-AR.jpg" /></div>
+                    <div class="card_content">
+                      <h4 class="card_title">Team Member</h4>
+                      <h1 class="card_text">Aryan Rane</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col col-team-2">
+                  <div
+                    class="card champ-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image"><img src="./img/GDSCChamps22/GC-UR.jpg" /></div>
+                    <div class="card_content">
+                      <h4 class="card_title">Team Member</h4>
+                      <h1 class="card_text">Ujjwesh Rao</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>             
+                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12 center-col">
+                  <div
+                    class="card champ-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="card_image"><img src="./img/GDSCChamps22/GC-SM.jpg" /></div>
+                    <div class="card_content">
+                      <h4 class="card_title">Team Member</h4>
+                      <h1 class="card_text">Sudhanshu Mishra</h1>
+                      <div class="card-logo-item">
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img
+                              src="img/LinkedIN_white.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img
+                              src="img/Instagram_black.svg"
+                              alt=""
+                              srcset=""
+                            />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img src="img/Github_black.svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                        <div class="card-logo">
+                          <a href="https://" target="_blank">
+                            <img src="img/www..svg" alt="" srcset="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <div id="Team-2023-24" class="container tab-pane fade">
+            <div class="t23-24">On the Way.....</div>
+          </div>
         </div>
-</section>
-  
-</main>
+      </section>
+    </main>
+    <footer class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12">
+            <div class="footer-left">
+              <div class="footer-title">Get in touch with us?</div>
+              <div class="social-footer-icons">
+                <a
+                  href="https://www.instagram.com/gdsc_bvpdetnm/"
+                  target="_blank"
+                  ><img src="img/Instagram.svg" alt="Intragram"
+                /></a>
+                <a href="https://github.com/GDSC-BVPDET-NM" target="_blank"
+                  ><img src="img/github.svg" alt="github"
+                /></a>
+                <a href="mailto:gdscbvp@gmail.com" target="_blank"
+                  ><img src="img/Mail.svg" alt="mail"
+                /></a>
+                <a href="https://www.linkedin.com/company/gdsc-bvp-det-nm/"
+                  ><img src="img/Discord.svg" alt="discord"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1 col-xl-1 col-md-12 col-sm-12 col-xs-12"></div>
+          <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12">
+            <div class="footer-center">
+              <div class="footer-title">Feedback</div>
+              <div class="footer-center-desc">Your Opinion Matters</div>
 
-      <footer class="footer-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12">
-              <div class="footer-left">
-                <div class="footer-title">Get in touch with us?</div>
-                <div class="social-footer-icons">
-                    <a target="_blank" href="https://www.instagram.com/gdsc_bvpdetnm/" target="_blank"><img src="img/Instagram.svg" alt="Intragram" /></a>
-                    <a target="_blank" href="https://github.com/GDSC-BVP-DET-Navi-Mumbai"  target="_blank"><img src="img/github.svg" alt="github" /></a>
-                    <a target="_blank" href="mailto:gdscbvp@gmail.com"  target="_blank"><img src="img/Mail.svg" alt="mail" /></a>
-                    <a target="_blank" href="https://www.linkedin.com/company/gdsc-bvp-det-nm/" ><img src="img/Discord.svg" alt="discord" /></a>
-                  </div>
-              </div>
-            </div>
-            <div class="col-lg-1 col-xl-1 col-md-12 col-sm-12 col-xs-12"></div>
-            <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12">
-              <div class="footer-center">
-                <div class="footer-title">Feedback</div>
-                <div class="footer-center-desc">Your Opinion Matters</div>
-  
-                <button class="hero-btn footer-btn">Your Word Matters</button>
-              </div>
-            </div>
-            <div class="col-lg-1 col-xl-1 col-md-12 col-sm-12 col-xs-12"></div>
-            <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-xs-12">
-              <div class="footer-right">
-                <div class="footer-title footer-right-title">
-                  Location of our HQ.
-                </div>
-                <div class="footer-right-desc">
-                  <img
-                    src="img/location.svg"
-                    alt="location"
-                    class="location-footer"
-                  />
-                  <div class="desc-text">
-                    BVP Department of Engineering and Technology - Navi Mumbai
-                  </div>
-                </div>
-              </div>
+              <button class="hero-btn footer-btn">Your Word Matters</button>
             </div>
           </div>
-          <div class="made-with-love">
-            <div class="text-center">
-              Made in love &#9829 by the
-              <a class="footer-team" target="_blank" href="./websiteTeam.html">team</a> of GDSC Bharati Vidyapeeth
-              Department of Engineering and Technology - Navi Mumbai
+          <div class="col-lg-1 col-xl-1 col-md-12 col-sm-12 col-xs-12"></div>
+          <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-xs-12">
+            <div class="footer-right">
+              <div class="footer-title footer-right-title">
+                Location of our HQ.
+              </div>
+              <div class="footer-right-desc">
+                <img
+                  src="img/location.svg"
+                  alt="location"
+                  class="location-footer"
+                />
+                <div class="desc-text">
+                  BVP Department of Engineering and Technology - Navi Mumbai
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </footer>
-      
+        <div class="made-with-love">
+          <div class="text-center">
+            Made in love &#9829 by the
+            <a class="footer-team" target="_blank" href="./websiteTeam.html"
+              >team</a
+            >
+            of GDSC Bharati Vidyapeeth Department of Engineering and Technology
+            - Navi Mumbai
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- Optional JavaScript; choose one of the two! -->
- <!-- jQuery and Bootstrap Bundle -->
- <script src="script/index.js"></script>
+    <!-- jQuery and Bootstrap Bundle -->
+    <script src="script/index.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -518,7 +1396,7 @@
       crossorigin="anonymous"
     ></script>
     <script>
-        AOS.init();
-      </script>
-</body>
+      AOS.init();
+    </script>
+  </body>
 </html>
